@@ -3,11 +3,9 @@
     <div id="nav">
       <router-link
         v-for="route in $router.options.routes"
-        :key="route"
+        :key="route.id"
         :to="route.path"
-      >
-        {{ route.name }}
-      </router-link>
+      >{{ route.name }}</router-link>
     </div>
 
     <router-view />
