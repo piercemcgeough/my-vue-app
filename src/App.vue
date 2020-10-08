@@ -5,7 +5,6 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/among-us">Among Us!</router-link>
     </div>
-
     <router-view />
   </div>
 </template>

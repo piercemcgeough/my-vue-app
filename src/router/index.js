@@ -19,7 +19,7 @@ const routes = [
     component: About
   },
   {
-    path: "/amoung-us",
+    path: "/among-us",
     name: "Among Us",
     component: AmongUs
   }
