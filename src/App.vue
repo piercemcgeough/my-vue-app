@@ -1,10 +1,15 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/among-us">Among Us!</router-link>
+      <router-link
+        v-for="route in $router.options.routes"
+        :key="route"
+        :to="route.path"
+      >
+        {{ route.name }}
+      </router-link>
     </div>
+
     <router-view />
   </div>
 </template>
@@ -25,6 +30,7 @@
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  margin: 0 10px;
 }
 
 #nav a.router-link-exact-active {
